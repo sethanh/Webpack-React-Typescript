@@ -10,18 +10,17 @@ const ESLintPlugin = require('eslint-webpack-plugin')
 // const Dotenv = require('dotenv-webpack')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const webpack = require('webpack')
-const dotenv = require('dotenv');
+const dotenv = require('dotenv')
 
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === 'production'
 const isAnalyze = process.env.ANL == 'yes'
-let ops = process.env.OPS;
-const envFile = ops?`.env.${ops}`:'.env';
-const env = dotenv.config({ path: envFile }).parsed;
-console.info('ENVIRONMENT VARIABLES:', env);
+let ops = process.env.OPS
+const envFile = ops ? `.env.${ops}` : '.env'
+const env = dotenv.config({ path: envFile }).parsed
+console.info('ENVIRONMENT VARIABLES:', env)
 
-const entry = './src/index.tsx';
-const template = './public/index.html';
-
+const entry = './src/index.tsx'
+const template = './public/index.html'
 
 module.exports = () => {
   const config = {

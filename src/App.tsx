@@ -12,11 +12,11 @@ const App: FC = () => {
   const [fullname, setFullname] = useState('Thanh se')
   console.log(fullname)
   return (
-    <div>
+    <div className='main'>
       <img src={reactlogo} alt='ReactLogo' width={100} height={100} />
       <h1>{fullname}</h1>
-      <h2>Bài viết được viết tại blog {HOST}</h2>
-      <h2>Tên App {APP_NAME}</h2>
+      <h2>{HOST}</h2>
+      <h2>{APP_NAME}</h2>
     </div>
   )
 }
