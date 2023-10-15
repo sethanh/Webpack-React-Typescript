@@ -14,7 +14,7 @@ const dotenv = require('dotenv')
 
 const isProduction = process.env.NODE_ENV === 'production'
 const isAnalyze = process.env.ANL == 'yes'
-let ops = process.env.OPS
+let ops = process.env.ENV
 const envFile = ops ? `.env.${ops}` : '.env'
 const env = dotenv.config({ path: envFile }).parsed
 console.info('ENVIRONMENT VARIABLES:', env)
