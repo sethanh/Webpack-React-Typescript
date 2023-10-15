@@ -9,7 +9,7 @@ import { HOST, APP_NAME } from '@Const/constants'
 
 const App: FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [fullname, setFullname] = useState('Nguyen Thanh se')
+  const [fullname, setFullname] = useState('Nguyen Thanh se - Test docker')
   console.log(fullname)
   return (
     <div className='main'>
