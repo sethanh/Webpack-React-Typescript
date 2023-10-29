@@ -34,8 +34,10 @@ module.exports = () => {
       alias: {
         // Cấu hình alias cho webpack
         // để khi import cho ngắn gọn
+        '@Src': path.resolve(__dirname, './src'),
         '@Const': path.resolve(__dirname, './constants'),
-        '@pages': path.resolve(__dirname, './src/pages')
+        '@Pages': path.resolve(__dirname, './src/Pages'),
+        '@Routes': path.resolve(__dirname, './src/Routes')
       }
     },
     // File đầu vào cho webpack, file này thường là file import mọi file khác
